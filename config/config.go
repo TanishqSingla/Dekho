@@ -40,7 +40,7 @@ type Config struct {
 
 	SMTPHost     string
 	SMTPPort     string
-	SMTPPAssword string
+	SMTPPassword string
 	SMTPUser     string
 }
 
@@ -111,7 +111,7 @@ func LoadConfig(envFile string) error {
 
 		SMTPHost:     os.Getenv("SMTPHost"),
 		SMTPPort:     os.Getenv("SMTPPort"),
-		SMTPPAssword: os.Getenv("SMTPPAssword"),
+		SMTPPassword: os.Getenv("SMTPPassword"),
 		SMTPUser:     os.Getenv("SMTPUser"),
 	}
 
